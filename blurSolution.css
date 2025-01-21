@@ -1,0 +1,12 @@
+One approach to mitigate this issue is to wrap the element with the transform and blur inside a container. Apply the transform to the container and the blur filter directly to the inner element. This can sometimes isolate the filter from the transform's interference.  Another strategy is to use a different technique to achieve a similar visual effect, like using a background blur via `backdrop-filter` or creating the blur using JavaScript and a canvas element if compatibility isn't a major concern.  Browser-specific CSS prefixes might also be needed in some edge cases. 
+
+```css
+/* blurSolution.css */
+.container {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.element {
+  filter: blur(5px);
+}
+```
