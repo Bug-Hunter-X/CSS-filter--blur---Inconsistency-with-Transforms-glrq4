@@ -1,0 +1,1 @@
+This repository demonstrates a bug related to the CSS `filter: blur()` property and its interaction with CSS transforms like `scale()` and `rotate()`.  In some cases, the blur effect may be applied inconsistently or not at all when combined with these transforms.  The `blurBug.css` file reproduces the issue, while `blurSolution.css` offers potential workarounds.
